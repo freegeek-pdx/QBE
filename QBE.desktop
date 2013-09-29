@@ -1,0 +1,6 @@
+[Desktop Entry]
+Type=Application
+Encoding=UTF-8
+Name=Connect to QBE
+Exec=/opt/QBE.sh
+Categories=Network;WebBrowser;
