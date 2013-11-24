@@ -1,0 +1,14 @@
+Install process:
+
+user@machine:~$ cd /opt
+user@machine:/opt$ sudo git clone https://github.com/freegeek-pdx/QBE
+Cloning into 'QBE'...
+remote: Counting objects: 8, done.
+remote: Compressing objects: 100% (7/7), done.
+remote: Total 8 (delta 0), reused 8 (delta 0)
+Unpacking objects: 100% (8/8), done.
+user@machine:/opt$ sudo ./QBE/install.sh 
+user@machine:/opt$ ls -l /opt/QBE.sh /usr/share/applications/QBE.desktop 
+lrwxrwxrwx 1 root root 16 Nov 23 23:46 /opt/QBE.sh -> /opt/QBE//QBE.sh
+lrwxrwxrwx 1 root root 21 Nov 23 23:46 /usr/share/applications/QBE.desktop -> /opt/QBE//QBE.desktop
+user@machine:/opt$
