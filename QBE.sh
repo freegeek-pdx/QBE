@@ -17,8 +17,8 @@ get_password() {
 start_connection() {
     USER="$1"
     PW="$2"
-#    PRINTER='printer:wine-cellar="HP Universal Printing PCL 5"' # TODO: prompt for these -r printer:bigofficeprinter="HP Universal Printing PCL 5" -r printer:meeting-room="HP Universal Printing PCL 5"
-    rdesktop "$HOST" -u "$USER" -p "$PW" -f # FIXME: none of this works, -r "$PRINTER" -r "clipboard:CLIPBOARD"
+    # FIXME: none of this works, -r "$PRINTER" -r "clipboard:CLIPBOARD"
+    rdesktop "$HOST" -u "$USER" -p "$PW" -f -r printer:checks="HP Universal Printing PS" -r printer:wine-cellar="HP Universal Printing PCL 5" -r printer:bigofficeprinter="HP Universal Printing PCL 5" -r printer:meeting-room="HP Universal Printing PCL 5" 
 }
 
 U="$1"
